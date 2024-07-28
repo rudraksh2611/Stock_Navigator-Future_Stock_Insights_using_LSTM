@@ -1,4 +1,4 @@
-# Stock_Navigator - Future Stock Insights using LSTM
+# Stock_Foresight
 This is my project which I created in my summer break as I am learning ML Concepts. So, i tried to apply that in this project. First I preprocess the data on Google Colab, I trained my model using LSTM for predicting the future closing price of the INFOSYS stock.
 
 # Prediction Result (Part 1)
