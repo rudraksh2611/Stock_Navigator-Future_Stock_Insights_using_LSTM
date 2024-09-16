@@ -38,12 +38,8 @@ Predicting stock prices is a challenging task due to the volatile and non-linear
 - Visualize the predicted vs actual stock prices using graphs.
 - Evaluate the model performance using metrics like Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE).
 
-# Prediction Result (Part 1)
+# Prediction Result:
 ![Prediction_Result](https://github.com/rudraksh2611/Stock_Prediction_Using-LSTM/assets/117443595/96d905b3-0967-4971-a035-65bd6f701150)
 
-# Future Prediction Result (Part 2)
-![Screenshot (706)](https://github.com/user-attachments/assets/ff7d6810-5f0b-4393-9625-9d470b1412e7)
 
-# Comparsion of prediction done and actual movement of the stock
-![Screenshot (722)](https://github.com/user-attachments/assets/4a059373-b0ea-41e3-859d-caa4965c3461)
 
