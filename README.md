@@ -1,45 +1,121 @@
-# Stock_ForesightStock - Price Prediction using LSTM
-
-This project aims to predict the future closing prices of INFOSYS stock using Long Short-Term Memory (LSTM) networks. Developed during my summer break, this project is a practical application of the machine learning concepts I am currently learning. As an investor in the stock market, my interest in stock price movements inspired me to create this small, sweet project.
+# Stock Navigator
 
 ## Table of Contents
-- [Overview](#overview)
-- [Project Workflow](#project-workflow)
-- [Data Preprocessing](#data-preprocessing)
-- [Model Training](#model-training)
-- [Results](#results)
+
+1. [Overview](#overview)
+2. [Key Features](#key-features)
+3. [Project Components](#project-components)
+4. [Data Preprocessing](#data-preprocessing)
+5. [Feature Engineering and Analysis](#feature-engineering-and-analysis)
+6. [Model Architecture](#model-architecture)
+7. [Model Training](#model-training)
+8. [Deployment](#deployment)
+9. [Installation](#installation)
+10. [Usage](#usage)
+11. [Results](#results)
+12. [Contributing](#contributing)
+13. [License](#license)
+14. [Acknowledgements](#acknowledgements)
 
 ## Overview
-Predicting stock prices is a challenging task due to the volatile and non-linear nature of the market. LSTM networks are well-suited for this task as they can capture temporal dependencies in time-series data. This project focuses on predicting the closing prices of INFOSYS stock. As someone who invests in the stock market, understanding and predicting stock price trends is both a personal and professional interest.
 
-## Project Workflow
-1. **Data Loading**: Load historical stock price data.
-2. **Data Preprocessing**: Handle missing values, normalize the data, and visualize the original data.
-3. **Feature Selection**: Select relevant features and scale them.
-4. **Model Training**: Train the LSTM model on the training dataset.
-5. **Evaluation**: Evaluate the model's performance and visualize predictions.
-6. **Future Prediction**: Predict future stock prices and visualize the results.
+**Stock Navigator** is an advanced stock market prediction system designed to forecast future stock prices with high accuracy. This system utilizes Long Short-Term Memory (LSTM) neural networks to anticipate future stock prices based on historical data. The project was developed to provide precise and reliable stock price predictions, aiding investors in making informed decisions.
+
+## Key Features
+
+- **LSTM Neural Networks:** Utilizes LSTM models for accurate time-series forecasting.
+- **Comprehensive Data Processing:** Handles historical stock price data and various technical indicators.
+- **Feature Engineering:** Includes feature selection and optimization to enhance model performance.
+- **Real-Time Predictions:** Provides real-time stock price forecasts through a user-friendly interface.
+
+## Project Components
+
+1. **Data Collection:** Historical stock price data is collected from reliable sources.
+2. **Data Preprocessing:** Data is cleaned and transformed for model training.
+3. **Feature Engineering:** Technical indicators and other relevant features are computed.
+4. **Model Training:** LSTM models are trained on the processed data.
+5. **Model Evaluation:** Model performance is evaluated using various metrics.
+6. **Prediction Interface:** A web interface (alternative to Flask) displays the stock price predictions.
 
 ## Data Preprocessing
-- Load the historical stock price data.
-- Handle missing values by dropping rows with null values.
-- Normalize the data for better model performance.
-- Visualize the original stock price data to understand its trend.
+
+- **Data Sources:** Stock price data sourced from [Data Source Name].
+- **Data Cleaning:** Missing values and outliers are handled.
+- **Feature Selection:** Features such as Moving Average, RSI, etc., are computed.
+
+## Feature Engineering and Analysis
+
+Through extensive analysis of various features, it was determined that `Volume` and `VWAP` did not contribute to the model's efficiency. As a result, these features were excluded from the final model to enhance performance. The final feature set includes:
+
+- **Open Price**
+- **Close Price**
+- **High Price**
+- **Low Price**
+- **Moving Average**
+- **Relative Strength Index (RSI)**
+- **Other Technical Indicators**
+
+## Model Architecture
+
+- **LSTM Model:** The core of the prediction system. Designed to capture long-term dependencies and trends in stock price data.
 
 ## Model Training
-- Build and compile the LSTM model with appropriate layers.
-- Train the model using the preprocessed data.
-- Validate the model using a separate test dataset.
-- Save the model architecture and weights for future use.
+
+- **Training Data:** Historical stock prices with selected features.
+- **Validation Data:** Used to tune hyperparameters and avoid overfitting.
+- **Evaluation Metrics:** Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared score.
+
+## Deployment
+
+The system can be deployed using various web technologies. An alternative to Flask can be utilized for displaying predictions:
+
+- **Web Interface:** Integrates with the model to show real-time predictions.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/username/stock-navigator.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd stock-navigator
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Train the model:
+    ```bash
+    python train_model.py
+    ```
+2. Run the web interface:
+    ```bash
+    python app.py
+    ```
 
 ## Results
-- Make predictions on the test dataset.
-- Inverse transform the predicted data to its original scale.
-- Visualize the predicted vs actual stock prices using graphs.
-- Evaluate the model performance using metrics like Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE).
 
-# Prediction Result:
+Here is a sample result of the Stock Navigator's predictions:
+
+### Prediction vs Actual Price
+
 ![Prediction_Result](https://github.com/rudraksh2611/Stock_Prediction_Using-LSTM/assets/117443595/96d905b3-0967-4971-a035-65bd6f701150)
+*Figure 1: A comparison of predicted stock prices versus actual prices.*
 
+## Contributing
 
+Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [List any acknowledgements here]
+
+For any queries or support, please contact [your.email@example.com](mailto:your.email@example.com).
