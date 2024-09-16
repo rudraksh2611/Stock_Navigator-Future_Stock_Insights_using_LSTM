@@ -13,9 +13,6 @@
 9. [Installation](#installation)
 10. [Usage](#usage)
 11. [Results](#results)
-12. [Contributing](#contributing)
-13. [License](#license)
-14. [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -106,16 +103,4 @@ Here is a sample result of the Stock Navigator's predictions:
 ![Prediction_Result](https://github.com/rudraksh2611/Stock_Prediction_Using-LSTM/assets/117443595/96d905b3-0967-4971-a035-65bd6f701150)
 *Figure 1: A comparison of predicted stock prices versus actual prices.*
 
-## Contributing
-
-Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [List any acknowledgements here]
-
-For any queries or support, please contact [your.email@example.com](mailto:your.email@example.com).
+For any queries or support, please contact [workrsb2611@gmail.com](mailto:your.email@example.com).
